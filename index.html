@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #send {
+
+            margin-top: 20px;
+        }
+
+        img {
+            /* width: 200px; */
+            width: 400px;
+            height: 300px;
+
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 10px;
+
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            margin-left: 20px;
+            text-align: center;
+            background-color: rgb(242, 110, 49);
+            color: purple;
+            box-shadow: 20px black;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        button:active {
+            background-color: rosybrown;
+        }
+
+
+
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        a {
+            font-size: 30px;
+
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+    </head>
+
+    <body>
+        
+        <h1>Dice</h1>
+        <p>Changing dice number with clicking the button</p>
+
+        <div class="container">
+            <button onclick="change()">Dice</button>
+            <br>
+
+
+
+            <div id="send">
+
+
+            </div>
+
+        </div>
+
+        <script>
+            function change() {
+                let randome = Math.floor(Math.random() * 6+1);
+                console.log(randome);
+                if (randome === 1) {
+                    document.getElementById("send").innerHTML =
+                        '<img src="imag/1.jpg" />'
+
+                }
+                if (randome === 2) {
+                    document.getElementById("send").innerHTML =
+                        '<img src="imag/3.jpg"/>'
+                }
+                if (randome === 3) {
+                    document.getElementById("send").innerHTML = 
+                    '<img src="imag/2nd.jpg"/>'
+                }
+                if (randome === 4) {
+                    document.getElementById("send").innerHTML =
+                        '<img src="imag/4.jpg"/>'
+
+                }
+                if (randome === 5) {
+                    document.getElementById("send").innerHTML =
+                        '<img src="imag/5.jpg"/>'
+
+                }
+                if (randome === 6) {
+                    document.getElementById("send").innerHTML =
+
+                    '<img src="imag/6.jpg"/>'
+
+                }
+         
+
+
+
+
+            }
+
+
+
+
+        </script>
+
+
+
+
+    </body>
+
+</html>
